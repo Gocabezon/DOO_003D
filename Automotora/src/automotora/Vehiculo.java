@@ -69,5 +69,18 @@ public class Vehiculo {
     }
     
     
+    public void mostrarElementos(int n1, Vehiculo car){
+            System.out.println("Auto ------->" + car.getPatente());
+                    }
+    
+    public void calcularIvaVehiculo(){
+    System.out.println("Vehiculo con IVA: " + precio * 1.19);
+    System.out.println("Valor neto: " + precio);
+    }
+    
+    public String marcaAuto(){
+        return "La marca del auto: " + marca;
+    }
+    
     
 }

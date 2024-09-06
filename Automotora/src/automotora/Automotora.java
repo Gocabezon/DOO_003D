@@ -22,8 +22,10 @@ public class Automotora {
         Persona p1 = new Persona();
         Persona pVendedor = new Persona();
         Vendedor vendedorUno = new Vendedor();
+        Vehiculo auto = new Vehiculo();
         Persona p2 = new Persona("123456789-2", "Juan", "Valdes", 100, LocalDate.ofYearDay(1995, 360), true);
         Scanner entrada = new Scanner(System.in);
+        Scanner entradaDos = new Scanner (System.in);
         p1.setNombre("Pedro");
         System.out.println(p2);
         
@@ -45,17 +47,17 @@ public class Automotora {
             
             
             opcion= entrada.nextInt();
-            
+          
             
             switch(opcion){
                 case 1:
                     System.out.println("opcion 1");
                     System.out.println("ingrese el run del vendedor");
-                    pVendedor.setRun(entrada.nextLine());
+                    pVendedor.setRun(entradaDos.next());
                     System.out.println("ingrese el nombre del vendedor");
-                    pVendedor.setNombre(entrada.nextLine());
+                    pVendedor.setNombre(entradaDos.next());
                     System.out.println("ingrese el apellido del vendedor");
-                    pVendedor.setApellido(entrada.nextLine());
+                    pVendedor.setApellido(entradaDos.next());
                     System.out.println("ingrese el telefono del vendedor");
                     pVendedor.setTelefono(entrada.nextInt());
                     System.out.println("ingrese el año de nacimiento del vendedor");
@@ -78,6 +80,11 @@ public class Automotora {
                     System.out.println("opcion 2");
                 case 3:
                     System.out.println("opcion 3");
+                    auto.setPatente("abcd12");
+                    auto.setPrecio(5000);
+                    auto.mostrarElementos(1, auto);
+                    
+                    
                 case 4:
                     System.out.println("opcion 4");
                 case 5:
